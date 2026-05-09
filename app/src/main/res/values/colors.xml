@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="coffee_dark">#6F4E37</color>
+    <color name="coffee_medium">#A67C52</color>
+    <color name="coffee_light">#DCC5A1</color>
+    <color name="cream">#F5EBDD</color>
+    <color name="background">#FFF8F0</color>
+    <color name="text_dark">#3E2723</color>
+    <color name="accent_orange">#D2691E</color>
+</resources>
