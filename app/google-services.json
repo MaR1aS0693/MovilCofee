@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "654914746386",
+    "project_id": "movilcoffee",
+    "storage_bucket": "movilcoffee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654914746386:android:8f69494cf4695a866040cb",
+        "android_client_info": {
+          "package_name": "com.example.movilcofee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4i1wcOTG_gEMJVcn3ABZjEaKH5vn7JjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
