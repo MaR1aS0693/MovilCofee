@@ -36,7 +36,8 @@
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:src="@drawable/flecha"/>
+                    android:src="@drawable/flecha"
+                    android:contentDescription="Flecha" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -48,7 +49,8 @@
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/cafe"/>
+                        android:src="@drawable/grano"
+                        android:contentDescription="Logo café" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -57,13 +59,15 @@
                         android:text="Grano Maestro"
                         android:textColor="@color/coffee_dark"
                         android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/casa"/>
+                    android:src="@drawable/casa"
+                    android:contentDescription="Inicio" />
 
             </LinearLayout>
 
@@ -75,7 +79,7 @@
                 android:layout_marginTop="8dp"
                 android:text="Monitoreo del comportamiento del tostado"
                 android:textColor="@color/coffee_medium"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
 
             <!-- CARD PRINCIPAL -->
             <androidx.cardview.widget.CardView
@@ -105,17 +109,19 @@
                             android:text="Tiempo del Tostado"
                             android:textColor="@color/text_dark"
                             android:textSize="16sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="34dp"
                             android:background="@drawable/trazo"
+                            android:gravity="center"
                             android:paddingHorizontal="14dp"
                             android:paddingVertical="6dp"
                             android:text="En progreso ●"
                             android:textColor="@android:color/holo_green_dark"
                             android:textSize="12sp" />
+
                     </LinearLayout>
 
                     <!-- DURACION -->
@@ -125,7 +131,7 @@
                         android:layout_marginTop="16dp"
                         android:text="Duración total"
                         android:textColor="@color/coffee_medium"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -133,7 +139,7 @@
                         android:text="06:00 min"
                         android:textColor="@color/text_dark"
                         android:textSize="34sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <!-- TARJETAS -->
                     <LinearLayout
@@ -162,7 +168,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Transcurrido"
-                                    android:textSize="12sp"/>
+                                    android:textSize="12sp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -171,13 +177,13 @@
                                     android:text="02:15"
                                     android:textColor="@color/coffee_dark"
                                     android:textSize="26sp"
-                                    android:textStyle="bold"/>
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="min"
-                                    android:textSize="12sp"/>
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 
@@ -202,7 +208,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Restante"
-                                    android:textSize="12sp"/>
+                                    android:textSize="12sp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -211,13 +217,13 @@
                                     android:text="03:45"
                                     android:textColor="@color/coffee_dark"
                                     android:textSize="26sp"
-                                    android:textStyle="bold"/>
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="min"
-                                    android:textSize="12sp"/>
+                                    android:textSize="12sp" />
 
                             </LinearLayout>
 
@@ -242,7 +248,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Progreso"
-                                    android:textSize="12sp"/>
+                                    android:textSize="12sp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -251,7 +257,7 @@
                                     android:text="37%"
                                     android:textColor="@color/coffee_dark"
                                     android:textSize="26sp"
-                                    android:textStyle="bold"/>
+                                    android:textStyle="bold" />
 
                             </LinearLayout>
 
@@ -267,15 +273,14 @@
                         android:text="Gráfica"
                         android:textColor="@color/text_dark"
                         android:textSize="16sp"
-                        android:textStyle="bold"/>
-
+                        android:textStyle="bold" />
 
                     <!-- GRAFICA DINAMICA -->
                     <com.github.mikephil.charting.charts.LineChart
                         android:id="@+id/lineChart"
                         android:layout_width="match_parent"
                         android:layout_height="220dp"
-                        android:layout_marginTop="12dp"/>
+                        android:layout_marginTop="12dp" />
 
                     <!-- DESCRIPCION -->
                     <TextView
@@ -285,7 +290,7 @@
                         android:text="Descripción"
                         android:textColor="@color/text_dark"
                         android:textSize="15sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -293,15 +298,15 @@
                         android:layout_marginTop="6dp"
                         android:text="El tiempo se calcula desde el inicio del tostado hasta el fin estimado según el perfil seleccionado."
                         android:textColor="@color/coffee_medium"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp" />
 
                     <!-- ALERTA -->
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        app:cardCornerRadius="18dp"
                         app:cardBackgroundColor="#F4C99A"
+                        app:cardCornerRadius="18dp"
                         app:cardElevation="0dp">
 
                         <LinearLayout
@@ -314,16 +319,17 @@
                             <ImageView
                                 android:layout_width="26dp"
                                 android:layout_height="26dp"
-                                android:src="@drawable/alerta"/>
+                                android:src="@drawable/alerta"
+                                android:contentDescription="Alerta" />
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="12dp"
                                 android:layout_weight="1"
-                                android:text="El tiempo puede variar dependiendo del tipo de grano y las condiciones del tostado"
+                                android:text="El tiempo puede variar dependiendo del tipo de grano y las condiciones del tostado."
                                 android:textColor="@color/text_dark"
-                                android:textSize="13sp"/>
+                                android:textSize="13sp" />
 
                         </LinearLayout>
 
@@ -348,7 +354,7 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_menu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

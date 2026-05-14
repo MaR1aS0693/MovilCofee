@@ -46,6 +46,11 @@
             android:name=".AjustesActivity"
             android:exported="false" />
 
+        <!-- VELOCIDAD DEL TAMBOR -->
+        <activity
+            android:name=".VelocidadActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

@@ -33,13 +33,14 @@ class TiempoActivity : AppCompatActivity() {
             insets
         }
 
-        // BARRA DE NAVEGACION
+        // BOTTOM NAVIGATION
         val bottomNavigation =
             findViewById<BottomNavigationView>(R.id.bottomNavigation)
 
-        // MARCAR GRAFICAS/TIEMPO COMO ACTIVO
-        bottomNavigation.selectedItemId = R.id.nav_grafica
+        // MARCAR EVENTOS
+        bottomNavigation.selectedItemId = R.id.nav_eventos
 
+        // NAVEGACION ENTRE MODULOS
         bottomNavigation.setOnItemSelectedListener {
 
             when (it.itemId) {

@@ -89,7 +89,7 @@
                         <ImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/play" />
+                            android:src="@drawable/empezar" />
 
                         <LinearLayout
                             android:layout_width="0dp"

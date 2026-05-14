@@ -2,6 +2,7 @@ package com.example.movilcofee
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -33,7 +34,20 @@ class AjustesActivity : AppCompatActivity() {
             insets
         }
 
+        // CONTROL RPM
+
+        val layoutRPM = findViewById<LinearLayout>(R.id.layoutRPM)
+
+        layoutRPM.setOnClickListener {
+
+            startActivity(
+                Intent(this, VelocidadActivity::class.java)
+            )
+        }
+
+
         // BARRA DE NAVEGACION
+
         val bottomNavigation =
             findViewById<BottomNavigationView>(R.id.bottomNavigation)
 

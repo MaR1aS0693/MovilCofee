@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MovilCofee</string>
+    <string name="rpm_text">RPM</string>
+    <string name="estado_normal">Estado: Normal</string>
 </resources>

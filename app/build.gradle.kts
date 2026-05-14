@@ -60,12 +60,16 @@ dependencies {
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
 
+        implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+
+    dependencies {
 
         implementation("androidx.core:core-ktx:1.13.1")
         implementation("androidx.appcompat:appcompat:1.7.0")
 
-        implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+        implementation("com.google.android.material:material:1.11.0")
 
-
+    }
 
 }

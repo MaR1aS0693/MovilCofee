@@ -11,16 +11,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class EventosActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
 
         enableEdgeToEdge()
 
         setContentView(R.layout.activity_eventos)
 
-        // AJUSTE PARA LOS BORDES DE PANTALLA
+        // AJUSTE PARA BORDES
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainEventos)) { v, insets ->
 
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            val systemBars =
+                insets.getInsets(WindowInsetsCompat.Type.systemBars())
 
             v.setPadding(
                 systemBars.left,
@@ -32,11 +34,11 @@ class EventosActivity : AppCompatActivity() {
             insets
         }
 
-        // BARRA DE NAVEGACION
+        // BOTTOM NAVIGATION
         val bottomNavigation =
             findViewById<BottomNavigationView>(R.id.bottomNavigation)
 
-        // MARCAR EVENTOS COMO SELECCIONADO
+        // MARCAR EVENTOS
         bottomNavigation.selectedItemId = R.id.nav_eventos
 
         bottomNavigation.setOnItemSelectedListener {
@@ -55,11 +57,23 @@ class EventosActivity : AppCompatActivity() {
                     true
                 }
 
-                // GRAFICAS
+                // GRAFICA
                 R.id.nav_grafica -> {
 
                     startActivity(
                         Intent(this, GraficasActivity::class.java)
+                    )
+
+                    finish()
+
+                    true
+                }
+
+                // TIEMPO
+                R.id.nav_tiempo -> {
+
+                    startActivity(
+                        Intent(this, TiempoActivity::class.java)
                     )
 
                     finish()

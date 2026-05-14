@@ -38,13 +38,13 @@
                     android:layout_height="28dp"
                     android:src="@drawable/casa"/>
 
-                <!-- TITULO CENTRADO -->
+                <!-- TITULO -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="12dp">
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="45dp"
@@ -281,6 +281,71 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- CONTROL DEL TOSTADOR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Control del tostador"
+                android:textColor="@color/coffee_dark"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutRPM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <!-- TEXTO -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Velocidad RPM"
+                            android:textColor="@color/text_dark"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txtRPMActual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="45 RPM"
+                            android:textColor="@color/coffee_medium"
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+                    <!-- FLECHA -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/coffee_medium"
+                        android:textSize="28sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
             <!-- PREFERENCIAS -->
             <TextView
                 android:layout_width="wrap_content"
@@ -335,7 +400,7 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_menu"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
